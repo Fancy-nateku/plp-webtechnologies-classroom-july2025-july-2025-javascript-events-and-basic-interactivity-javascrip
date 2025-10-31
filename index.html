@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="nav-logo">WebApp</h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#form" class="nav-link">Form</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="main-content">
+      <!-- Welcome Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h2>Welcome to Our Interactive Web App</h2>
+          <p>
+            Experience modern web interactions with form validation, dark mode,
+            and more!
+          </p>
+          <button id="cta-btn" class="cta-button">Get Started</button>
+        </div>
+      </section>
+
+      <!-- User Registration Form -->
+      <section id="form" class="form-section">
+        <div class="form-container">
+          <h2>User Registration</h2>
+          <p>Please fill out the form below to create your account</p>
+
+          <form id="registration-form" class="registration-form">
+            <!-- Name Input -->
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Enter your full name"
+              />
+              <div class="error-message" id="name-error"></div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="text"
+                id="email"
+                class="form-input"
+                placeholder="Enter your email address"
+              />
+              <div class="error-message" id="email-error"></div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                placeholder="Create a strong password"
+              />
+              <div class="error-message" id="password-error"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Create Account</button>
+          </form>
+
+          <!-- Form Success Message -->
+          <div id="form-success" class="success-message hidden">
+            <h3>🎉 Registration Successful!</h3>
+            <p>Thank you for signing up. Welcome to our community!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section">
+        <div class="faq-container">
+          <h2>Frequently Asked Questions</h2>
+          <p>Click on any question to see the answer</p>
+
+          <div class="faq-list">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What is this web application about?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  This is an interactive web application demonstrating modern
+                  web development techniques including form validation,
+                  dark/light mode toggling, and dynamic content interactions.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How does the form validation work?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Our custom form validation checks name format, email validity
+                  using regular expressions, and password strength requirements
+                  without relying on HTML5 built-in validation.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Can I use dark mode?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes! Click the dark mode toggle button in the navigation bar
+                  to switch between light and dark themes. Your preference will
+                  be saved.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Is my data secure?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  This is a frontend demonstration only. No data is actually
+                  stored or transmitted to servers. All processing happens
+                  locally in your browser.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Interactive Web Application. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
